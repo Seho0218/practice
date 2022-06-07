@@ -1,0 +1,49 @@
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$ git add .
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   new.txt
+
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$ commit -m 'change new.txt'
+bash: commit: command not found
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$ git commit -m 'change new.txt'
+[master 2699ee8] change new.txt
+ 1 file changed, 1 insertion(+)
+
+Seho@DESKTOP-KI4V3V9 MINGW64 ~/git/git-practice (master)
+$
+
+커밋 아이디->2699ee8 (HEAD -> master) change new.txt
+08107f3 make directory, name: new.txt
+
+
+branch 작업 공간
+head 어디를 바라보는가
+
+
+on branch master
+nothing to commit, working tree clean 스테이징 에어리어에 아무것도 없다
